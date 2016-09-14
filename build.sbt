@@ -1,12 +1,14 @@
 sbtPlugin := true
 
-enablePlugins(BuildInfoPlugin)
+enablePlugins(GitVersioning, BuildInfoPlugin)
 
 organization := "com.nike.sbt.plugins"
 
 name := "sbt-redwiggler"
 
-version := "0.1-SNAPSHOT"
+git.baseVersion := "0.2"
+
+git.useGitDescribe := true
 
 scalacOptions ++= Seq("-feature", "-deprecation")
 
