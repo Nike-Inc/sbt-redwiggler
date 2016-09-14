@@ -20,9 +20,9 @@ object SbtRedWiggler extends sbt.AutoPlugin {
 
   override def projectSettings: Seq[Def.Setting[_]] = Seq(
     blueprintFile := new File(baseDirectory.value, "API.md"),
-    swaggerFile := new File(baseDirectory.value, "swagger.yamld"),
+    swaggerFile := new File(baseDirectory.value, "swagger.yaml"),
     dataDirectory := new File(target.value, "redwiggler-input"),
-    target in redwiggler := new File((target in Compile).value, "redwiggler.html"),
+    target in redwiggler := new File(target.value, "redwiggler.html"),
     redwiggler <<= (target in redwiggler, dataDirectory, blueprintFile, swaggerFile) map { (output, dataDir, mdFile, swagger) =>
       ResultValidator.validateResults(new RedWigglerConfiguration {
           val getMarkdownFile = mdFile
