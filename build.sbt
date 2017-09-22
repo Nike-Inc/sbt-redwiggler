@@ -1,16 +1,12 @@
 sbtPlugin := true
 
-enablePlugins(GitVersioning, BuildInfoPlugin)
+enablePlugins(BuildInfoPlugin)
 
 resolvers += Resolver.jcenterRepo
 
 organization := "com.nike.redwiggler.sbt"
 
 name := "sbt-redwiggler"
-
-git.baseVersion := "0.2"
-
-git.useGitDescribe := true
 
 scalacOptions ++= Seq("-feature", "-deprecation")
 
