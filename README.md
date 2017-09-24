@@ -1,4 +1,8 @@
-# Usage
+# sbt-redwiggler
+[![Build Status](https://travis-ci.com/Nike-Inc/sbt-redwiggler.svg?token=PmECSWCH8LFEKNdzr64F&branch=master)](https://travis-ci.com/Nike-Inc/sbt-redwiggler)
+
+## Usage
+
 
 To add the sbt plugin to your project add the sbt plugin dependency in `project/plugins.sbt`:
 
