@@ -1,0 +1,4 @@
+#http://www.scala-sbt.org/release/docs/Testing-sbt-plugins.html
+$ mkdir target/redwiggler-input
+> redwiggler
+$ exists target/redwiggler.html
