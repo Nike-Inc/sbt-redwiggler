@@ -33,3 +33,8 @@ scriptedLaunchOpts := { scriptedLaunchOpts.value ++
   Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
 }
 scriptedBufferLog := false
+
+coverageMinimum in ThisBuild := 95
+coverageFailOnMinimum in ThisBuild := true
+//https://stackoverflow.com/questions/24269214/why-does-the-scala-compiler-error-with-synthetic-tree-contains-nonsynthetic-tre
+coverageHighlighting := false
