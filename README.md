@@ -1,5 +1,6 @@
 # sbt-redwiggler
 [![Build Status](https://travis-ci.com/Nike-Inc/sbt-redwiggler.svg?token=PmECSWCH8LFEKNdzr64F&branch=master)](https://travis-ci.com/Nike-Inc/sbt-redwiggler)
+[ ![Download](https://api.bintray.com/packages/nike/sbt-plugins/sbt-redwiggler/images/download.svg) ](https://bintray.com/nike/sbt-plugins/sbt-redwiggler/_latestVersion)
 
 ## Usage
 

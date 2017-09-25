@@ -38,3 +38,8 @@ coverageMinimum in ThisBuild := 95
 coverageFailOnMinimum in ThisBuild := true
 //https://stackoverflow.com/questions/24269214/why-does-the-scala-compiler-error-with-synthetic-tree-contains-nonsynthetic-tre
 coverageHighlighting := false
+
+licenses in ThisBuild := Seq(
+  "BSD" -> new java.net.URL("https://opensource.org/licenses/BSD-3-Clause")
+)
+bintrayOrganization in ThisBuild := Some("nike")
