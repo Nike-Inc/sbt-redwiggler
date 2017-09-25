@@ -3,4 +3,5 @@ scala:
   - 2.10.8
 
 script:
-  - "sbt scripted"
+  - "sbt clean coverage scripted"
+  - "sbt coverageReport"
