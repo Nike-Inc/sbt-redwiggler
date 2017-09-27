@@ -5,3 +5,5 @@ scala:
 script:
   - "sbt clean coverage scripted"
   - "sbt coverageReport"
+after_success:
+  - "sbt coveralls"
