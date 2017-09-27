@@ -43,3 +43,6 @@ licenses in ThisBuild := Seq(
   "BSD" -> new java.net.URL("https://opensource.org/licenses/BSD-3-Clause")
 )
 bintrayOrganization in ThisBuild := Some("nike")
+
+import org.scoverage.coveralls.Imports.CoverallsKeys._
+coverallsServiceName := Some("travis-pro")
