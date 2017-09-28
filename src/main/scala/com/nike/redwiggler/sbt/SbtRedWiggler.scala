@@ -15,8 +15,6 @@ object SbtRedWiggler extends sbt.AutoPlugin {
     val redwiggler = taskKey[File]("Runs RedWiggler")
   }
 
-  val redwigglerRestAssured = "com.nike.redwiggler" %% "redwiggler-restassured" % BuildInfo.redwigglerVersion
-
   import autoImport._
 
   override def projectSettings: Seq[Def.Setting[_]] = Seq(
@@ -32,4 +30,6 @@ object SbtRedWiggler extends sbt.AutoPlugin {
       output
     }
   )
+
+  def redwigglerDependency(name : String): ModuleID = "com.nike.redwiggler" %% s"redwiggler-$name" % BuildInfo.redwigglerVersion
 }

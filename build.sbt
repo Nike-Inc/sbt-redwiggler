@@ -12,7 +12,7 @@ scalacOptions ++= Seq("-feature", "-deprecation")
 
 resolvers += Resolver.mavenLocal
 
-val redwigglerVersion = "0.5.1"
+val redwigglerVersion = "0.5.3"
 
 libraryDependencies ++= Seq(
   "com.nike.redwiggler" %% "redwiggler-reports-html" % redwigglerVersion,

@@ -24,3 +24,7 @@ If you only have a single project and are using a `build.sbt` file, create a roo
 lazy val root = (project in file(".")).enablePlugins(SbtRedWiggler)
 ```
 
+To add a redwiggler library to your project with the same version of redwiggler that the plugin is using:
+```scala
+libraryDependencies += SbtRedWiggler.redwigglerDependency("restassured")
+```
