@@ -1,5 +1,6 @@
 # sbt-redwiggler
-[![Build Status](https://travis-ci.com/Nike-Inc/sbt-redwiggler.svg?token=PmECSWCH8LFEKNdzr64F&branch=master)](https://travis-ci.com/Nike-Inc/sbt-redwiggler)
+
+[![Build Status](https://travis-ci.org/Nike-Inc/sbt-redwiggler.svg?branch=master)](https://travis-ci.org/Nike-Inc/sbt-redwiggler)
 [![Coverage Status](https://coveralls.io/repos/github/Nike-Inc/sbt-redwiggler/badge.svg)](https://coveralls.io/github/Nike-Inc/sbt-redwiggler)
 [ ![Download](https://api.bintray.com/packages/nike/sbt-plugins/sbt-redwiggler/images/download.svg) ](https://bintray.com/nike/sbt-plugins/sbt-redwiggler/_latestVersion)
 
