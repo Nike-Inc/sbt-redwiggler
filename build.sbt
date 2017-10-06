@@ -44,5 +44,3 @@ licenses in ThisBuild := Seq(
 )
 bintrayOrganization in ThisBuild := Some("nike")
 
-import org.scoverage.coveralls.Imports.CoverallsKeys._
-coverallsServiceName := Some("travis-pro")
