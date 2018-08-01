@@ -8,11 +8,13 @@ organization := "com.nike.redwiggler.sbt"
 
 name := "sbt-redwiggler"
 
+crossSbtVersions := Seq("0.13.16", "1.1.6")
+
 scalacOptions ++= Seq("-feature", "-deprecation")
 
 resolvers += Resolver.mavenLocal
 
-val redwigglerVersion = "0.5.3"
+val redwigglerVersion = "0.5.6"
 
 libraryDependencies ++= Seq(
   "com.nike.redwiggler" %% "redwiggler-reports-html" % redwigglerVersion,
@@ -43,4 +45,3 @@ licenses in ThisBuild := Seq(
   "BSD" -> new java.net.URL("https://opensource.org/licenses/BSD-3-Clause")
 )
 bintrayOrganization in ThisBuild := Some("nike")
-

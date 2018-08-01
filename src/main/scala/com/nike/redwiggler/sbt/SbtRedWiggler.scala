@@ -21,10 +21,12 @@ object SbtRedWiggler extends sbt.AutoPlugin {
     swaggerFile := new File(baseDirectory.value, "swagger.yaml"),
     dataDirectory := new File(target.value, "redwiggler-input"),
     target in redwiggler := new File(target.value, "redwiggler.html"),
-    redwiggler <<= (target in redwiggler, dataDirectory, swaggerFile) map { (output, dataDir, swagger) =>
+    resolvers += "nike" at "https://dl.bintray.com/nike/maven",
+    redwiggler := {
+      val output = (target in redwiggler).value
       Redwiggler(
-        callProvider = new GlobEndpointCallProvider(dataDir, ".*.json"),
-        specificationProvider = SwaggerEndpointSpecificationProvider(swagger),
+        callProvider = new GlobEndpointCallProvider(dataDirectory.value, ".*.json"),
+        specificationProvider = SwaggerEndpointSpecificationProvider(swaggerFile.value),
         reportProcessor = HtmlReportProcessor(output)
       )
       output
